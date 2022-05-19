@@ -1,3 +1,3 @@
-# vibrantjs-ejemplo
+Material Palette Color Demo
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vibrantjs-ejemplo)
+[View on StackBlitz ⚡️](https://stackblitz.com/edit/vibrantjs-ejemplo)
