@@ -1,0 +1,10 @@
+{
+  "name": "material-palette-color-demo",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "node-vibrant": "^3.1.6",
+    "rxjs": "^7.5.5",
+    "tmdb-typescript-api": "^0.0.5"
+  }
+}
