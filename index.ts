@@ -28,9 +28,9 @@ const API_MOVIES: TmdbApi.TmdbApi = new TmdbApi.TmdbApi(
   'es-mx'
 );
 
-API_MOVIES.search.tvshows('Dark').subscribe((response) => {
+API_MOVIES.search.movies('Pokemon').subscribe((response) => {
   if (response.total_results > 0) {
-    setDataMovie(response.results[0]);
+    setDataMovie(response.results[8]);
   } else {
     header.innerText = 'Sin resultados';
     subheader.innerText = '';
@@ -46,7 +46,7 @@ const setDataMovie = async (data) => {
 
   const palette = await getColors(poster_path);
 
-  setColorsToElement(palette, 'DarkVibrant');
+  setColorsToElement(palette, 'Vibrant');
   setPaletteElements(palette);
 };
 
@@ -85,7 +85,7 @@ const setColorsToElement = (palette: Palette, swatchPalette: SwatchPalette) => {
 
   paleteColors.style.background = swatch.getHex();
 
-  document.body.style.backgroundColor = palette['DarkMuted'].getHex();
+  document.body.style.backgroundColor = palette['DarkVibrant'].getHex();
 };
 
 const setPaletteElements = (palette: Palette) => {
